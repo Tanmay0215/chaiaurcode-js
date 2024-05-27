@@ -146,6 +146,10 @@ when passed in function a copy is created and copy is changed
 - Symbol
 - BigInt
 
+> when function is logged but it is not returning anything it returns undefined
+
+````js
+
 ### Non-Primitive (Reference)
 
 - Array - list of items
@@ -172,7 +176,7 @@ const id2 = Symbol("123");
 console.log(typeof id1, typeof id2); // outputs "symbol"
 console.log(id1 === id2); // outputs false
 // above output shows that symbol is unique
-```
+````
 
 ## Memory in JS
 
@@ -318,6 +322,7 @@ console.log(num2.toPrecision(3)); // outputs 124
 - `isInteger("10.5")` - checks if the value is integer
 
 ### Some constants in Math object
+
 MAX_VALUE, MIN_VALUE, POSITIVE_INFINITY, NEGATIVE_INFINITY, MAX_SAFE_INTEGER, MIN_SAFE_INTEGER, EPSILON, PI, NaN
 
 ```js
