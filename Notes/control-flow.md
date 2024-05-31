@@ -143,3 +143,24 @@ if (Object.keys(emptyObj).length === 0){
   console.log("Object is empty");
 }
 ```
+
+**Nullish coalescing operator** `??` - it checks for null or undefined values
+
+```js
+let val1;
+val1 = 5 ?? 10
+console.log(val1) // 5
+val1 = null ?? 10
+console.log(val1) // 10
+val1 = null ?? 10 ?? 20
+// checks if null is there if null then another value else the first value
+```
+
+### Ternary Operator - ?
+
+```js
+const iceTeaPrice = 100
+iceTeaPrice >= 80 ? console.log("less than 80") : console.log("more than 80")
+```
+
+```js
