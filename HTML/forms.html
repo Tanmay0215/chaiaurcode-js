@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action: URL to send the form data to -->
+    <!-- method: HTTP method to use when sending the form data -->
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+    <form action="url" method="GET" accept-charset="UTF-8" autocomplete="off" enctype="">
+        <!-- clicking label will enable the input field -->
+        <label for="fname">First Name</label>
+        
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+        <input type="text" name="" placeholder="fist name here" id="fname" required>
+
+        <select name="editors" id="">
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </select>
+        
+        <input list="editors" name="editor">
+        <datalist id="editors">
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </datalist>
+        
+        <input type="reset" value="">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
