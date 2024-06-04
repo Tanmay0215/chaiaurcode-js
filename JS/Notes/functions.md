@@ -101,9 +101,7 @@ console.log(b); // ReferenceError: b is not defined
 ## Scope level
 
 - Global Scope - variables declared outside of any function or block.
-- Function Scope - variables declared inside a function.
 - Block Scope - variables declared inside a block (inside `{}`).
-- Lexical Scope - variables declared in a parent function are available to the child functions.
 
 ```js
 // Nested functions
