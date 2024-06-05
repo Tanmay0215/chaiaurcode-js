@@ -29,18 +29,19 @@
         required
       />
 
-      <select name="editors" id="">
+      <select name="editors" id="" title="Choose an editor">
+        <option value="editor">choose an editor</option>
         <option value="vscode">vscode</option>
         <option value="sublime">sublime</option>
       </select>
 
-      <input list="editors" name="editor" />
+      <!-- <input list="editors" name="editor" />
       <datalist id="editors">
         <option value="vscode">vscode</option>
         <option value="sublime">sublime</option>
-      </datalist>
+      </datalist> -->
 
-      <input type="reset" value="" />
+      <input type="reset" value="Reset" title="Reset form" />
       <button type="submit">Submit</button>
     </form>
   </body>
