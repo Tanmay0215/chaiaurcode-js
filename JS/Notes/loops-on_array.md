@@ -19,10 +19,10 @@ for (const greet of greeting) {
 
 ```js
 const map = new Map();
-map.set('IN', "India");
-map.set('USA', "United States of America");
-map.set('FR', "France");
-map.set('IN', "India");
+map.set("IN", "India");
+map.set("USA", "United States of America");
+map.set("FR", "France");
+map.set("IN", "India");
 // unique values only
 
 console.log(map);
@@ -33,7 +33,7 @@ for (const key of map) {
 }
 
 for (const [key, value] of map) {
-  console.log(key, ':-', value);
+  console.log(key, ":-", value);
 }
 ```
 
@@ -43,11 +43,11 @@ for (const [key, value] of map) {
 const obj = {
   name: "John",
   age: 30,
-  city: "New York"
+  city: "New York",
 };
 
 for (const key in obj) {
-  console.log(key, ':-', obj[key]);
+  console.log(key, ":-", obj[key]);
 }
 // error
 // Object not iterable
@@ -57,12 +57,12 @@ for (const key in obj) {
 const myObject = {
   js: "JavaScript",
   py: "Python",
-  rb: "Ruby"
-}
+  rb: "Ruby",
+};
 
 // for in loop
 for (const key in myObject) {
-  console.log(key, ':-', myObject[key]);
+  console.log(key, ":-", myObject[key]);
 }
 
 // for in on array
@@ -75,9 +75,9 @@ for (const key in arr) {
 // for in on map
 
 const map = new Map();
-map.set('IN', "India");
-map.set('USA', "United States of America");
-map.set('FR', "France");
+map.set("IN", "India");
+map.set("USA", "United States of America");
+map.set("FR", "France");
 
 for (const key in map) {
   console.log(key);
@@ -91,34 +91,36 @@ for (const key in map) {
 const coding = ["JavaScript", "Python", "Ruby", "Java"];
 
 // arr.forEach(callbackfn)
-coding.forEach(function(item){
-  console.log(item)
-})
+coding.forEach(function (item) {
+  console.log(item);
+});
 
 // using arrow function
 coding.forEach((item) => {
-  console.log(item)
-})
+  console.log(item);
+});
 
 // using arrow function with index
 coding.forEach((item, index, arr) => {
-  console.log(index, ':-', item, ':-', arr)
-})const coding = ["JavaScript", "Python", "Ruby", "Java"];
+  console.log(index, ":-", item, ":-", arr);
+});
+
+const coding = ["JavaScript", "Python", "Ruby", "Java"];
 
 // arr.forEach(callbackfn)
-coding.forEach(function(item){
-  console.log(item)
-})
+coding.forEach(function (item) {
+  console.log(item);
+});
 
 // using arrow function
 coding.forEach((item) => {
-  console.log(item)
-})
+  console.log(item);
+});
 
 // acess to item, index and full array
 coding.forEach((item, index, arr) => {
-  console.log(index, ':-', item, ':-', arr)
-})
+  console.log(index, ":-", item, ":-", arr);
+});
 ```
 
 ```js
@@ -126,14 +128,31 @@ coding.forEach((item, index, arr) => {
 const coding = [
   {
     lang: "JavaScript",
-    file: "js"
+    file: "js",
   },
   {
     lang: "Python",
-    file: "py"
-  }
+    file: "py",
+  },
 ];
 
-coding.forEach((item)=>{
-  console.log(item.lang, ':-', item.file)
-})
+coding.forEach((item) => {
+  console.log(item.lang, ":-", item.file);
+});
+
+// forEach returns undefined
+const coding = ["js", "ruby", "python", "java", "c++"];
+
+const values = coding.forEach((item) => {
+  // console.log(item)
+  return item;
+});
+
+console.log(values);
+
+// filter
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const newNums = myNums.filter((num) => num > 4);
+console.log(newNums);
+```
