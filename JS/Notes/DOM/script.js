@@ -1,4 +1,4 @@
-// changestrle function
+// changestyle function
 function changestyle() {
   document.getElementById("style").style.color = "red";
 }

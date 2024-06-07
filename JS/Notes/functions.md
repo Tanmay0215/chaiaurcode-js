@@ -98,7 +98,7 @@ console.log(a); // 10
 console.log(b); // ReferenceError: b is not defined
 ```
 
-## Scope level
+### Scope level
 
 - Global Scope - variables declared outside of any function or block.
 - Block Scope - variables declared inside a block (inside `{}`).
@@ -118,6 +118,7 @@ function outer() {
 }
 // inner function can access the variables of outer function not vice versa
 ```
+#### Anonymous Functions
 
 ```js
 // anonymous function
@@ -139,5 +140,6 @@ function greet(name) {
   return `Hello ${name}`;
 }
 // anonymous function can be called only after the function is defined as it is not hoisted
+
 // hoisting - function declaration is hoisted to the top of the code
 ```
