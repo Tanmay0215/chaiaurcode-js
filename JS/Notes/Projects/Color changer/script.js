@@ -1,5 +1,7 @@
 const div = document.querySelector('.button');
+const color = div.id;
 
 function changeColor() {
-    document.getElementById('color').style.backgroundColor = 'red';
-}
+    if(color === 'blue') {
+        body.style.backgroundColor = 'blue';
+    }}
