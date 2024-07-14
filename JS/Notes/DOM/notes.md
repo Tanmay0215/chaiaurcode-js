@@ -49,9 +49,8 @@ itemsArray.forEach((item) => {
 
 forEach will work on itemsArray
 
-parent child
-.children - nodeList
-.children[0] - first child
+`.children` - nodeList  
+`.children[0]` - first child
 
 ```js
 const parent = document.querySelector(".parent");
@@ -60,7 +59,13 @@ parent.children[0].textContent = "Hello";
 
 ## Create Element
 
+```html
+<div class="parent">
+
+</div>
+```
+
 ```js
-const newDiv = document.createElement("div");
-newDiv.className = "hello";
+
+
 ```

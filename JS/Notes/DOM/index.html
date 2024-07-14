@@ -7,14 +7,15 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div>
-        <h1>DOM</h1>
-        <p id="para">This is a paragraph</p>
-        <button onclick="changeText()">Change Text</button>
-        <button onclick="changeStyle()">Change Style</button>
-        <button onclick="changeAttribute()">Change Attribute</button>
-        <button onclick="addElement()">Add Element</button>
-        <button onclick="removeElement()">Remove Element</button>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
     </div>
+    <script>
+        document.querySelector(".parent")
+    </script>
 </body>
 </html>
